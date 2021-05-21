@@ -19,6 +19,8 @@ class UsersController {
       senha
     });
 
+    delete user.senha;
+
     return response.status(201).json(user);
   }
 }
